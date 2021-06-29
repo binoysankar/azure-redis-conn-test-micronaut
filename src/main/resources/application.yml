@@ -1,0 +1,11 @@
+micronaut:
+  application:
+    name: azure-redis-conn-test-micronaut
+  server:
+    port: 8649
+    thread-selection: io
+
+redis:
+  uri: rediss://<REDIS_PASSWORD>@<REDIS_HOST>:6380?timeout=0s
+  io-thread-pool-size: 5
+  computation-thread-pool-size: 4
